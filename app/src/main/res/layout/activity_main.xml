@@ -1,0 +1,85 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_color"
+    >
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/usu_t"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/inicio">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/usu_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10px"
+        android:text="usuario:       "
+        android:textColor="@color/black"
+        android:textSize="35dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="157px"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15px"
+        android:layout_marginTop="15px"
+        android:layout_marginEnd="15px"
+        android:layout_marginBottom="15px"
+        android:layout_toRightOf="@+id/usu_t"
+        android:textColor="@color/black"
+        android:hint="">
+    </EditText>
+
+    <TextView
+        android:id="@+id/t_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usu_t"
+        android:text="contraseña:"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_alignBaseline="@+id/contraseña"
+        android:padding="5dp"></TextView>
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="157px"
+        android:layout_below="@+id/usuario"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15px"
+        android:layout_marginTop="15px"
+        android:layout_marginEnd="15px"
+        android:layout_marginBottom="15px"
+        android:layout_toRightOf="@+id/t_con"
+        android:textColor="@color/black"
+        android:hint=""
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/inicioo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iniciar sesion"
+        android:layout_below="@+id/contraseña"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bt"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        >
+    </Button>
+
+
+</RelativeLayout>

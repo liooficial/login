@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_color"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="1050px"
+        android:layout_height="1050px"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/inicio">
+    </ImageView>
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:textSize="35sp"
+        android:hint="usuario">
+    </EditText>
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usuario"
+        android:textColor="@color/black"
+        android:layout_marginTop="85px"
+        android:layout_toRightOf="@+id/img"
+        android:textSize="35sp"
+        android:hint="contraseña"
+        >
+    </EditText>
+    <Button
+        android:id="@+id/inicioo"
+        android:background="@drawable/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iniciar sesion"
+        android:layout_below="@+id/contraseña"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        >
+    </Button>
+
+
+</RelativeLayout>
